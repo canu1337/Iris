@@ -68,9 +68,9 @@ const ContextMenuItems = ({
     case 'album': {
       return (
         <>
-          <Play uri={item.uri} context={item} action={playAlbum} />
+          {/* <Play uri={item.uri} context={item} action={playAlbum} />
           <Enqueue uri={item.uri} context={item} action={enqueueAlbum} play_next />
-          <Enqueue uri={item.uri} context={item} action={enqueueAlbum} />
+          <Enqueue uri={item.uri} context={item} action={enqueueAlbum} /> */}
           <Divider />
           {item.provider === 'spotify' && (
             <>
@@ -88,12 +88,10 @@ const ContextMenuItems = ({
       const urisToPlay = item.tracks ? arrayOf('uri', item.tracks) : [item.uri];
       return (
         <>
-          <Play uris={urisToPlay} context={context} />
-          <Enqueue uris={urisToPlay} context={context} play_next />
-          <Enqueue uris={urisToPlay} context={context} />
+          {/* <Play uris={urisToPlay} context={context} />
+          <Enqueue uris={urisToPlay} context={context} /> */}
           {item.provider === 'spotify' && (
             <>
-              <Radio uris={[item.uri]} />
               <Divider />
               {item.provider === 'spotify' && (
                 <>
@@ -113,10 +111,10 @@ const ContextMenuItems = ({
     case 'playlist': {
       return (
         <>
-          <Play uri={item.uri} action={playPlaylist} context={item} />
+          {/* <Play uri={item.uri} action={playPlaylist} context={item} />
           <Play uri={item.uri} action={playPlaylist} context={item} shuffle />
           <Enqueue uri={item.uri} action={enqueuePlaylist} context={item} play_next />
-          <Enqueue uri={item.uri} action={enqueuePlaylist} context={item} />
+          <Enqueue uri={item.uri} action={enqueuePlaylist} context={item} /> */}
           {item.provider === 'spotify' && <Library uri={item.uri} inLibrary={item.in_library} />}
           <Pin item={item} isPinned={item.is_pinned} />
           <Divider />
@@ -148,7 +146,7 @@ const ContextMenuItems = ({
             </>
           ) : (
             <>
-              <Enqueue uris={[item.uri]} context={context} play_next />
+              {/* <Enqueue uris={[item.uri]} context={context} play_next /> */}
               <Enqueue uris={[item.uri]} context={context} />
             </>
           )}
@@ -190,8 +188,8 @@ const ContextMenuItems = ({
             </>
           ) : (
             <>
-              <Play uris={uris} context={context} shuffle />
-              <Enqueue uris={uris} context={context} play_next />
+              {/* <Play uris={uris} context={context} shuffle />
+              <Enqueue uris={uris} context={context} play_next /> */}
               <Enqueue uris={uris} context={context} />
             </>
           )}
@@ -201,7 +199,7 @@ const ContextMenuItems = ({
           <Divider />
           {provider === 'spotify' && (
             <>
-              <Radio uris={uris} disabled={uris.length > 5} />
+              {/* <Radio uris={uris} disabled={uris.length > 5} /> */}
               <Discover uris={uris} context={context} disabled={uris.length > 5} />
               <Divider />
             </>
@@ -228,8 +226,8 @@ const ContextMenuItems = ({
     default: {
       return (
         <>
-          <Play uris={arrayOf('uri', items)} context={context} />
-          <Enqueue uris={arrayOf('uri', items)} context={context} play_next />
+          {/* <Play uris={arrayOf('uri', items)} context={context} /> */}
+          {/* <Enqueue uris={arrayOf('uri', items)} context={context} play_next /> */}
           <Enqueue uris={arrayOf('uri', items)} context={context} />
           <Divider />
           <Copy uris={arrayOf('uri', items)} />

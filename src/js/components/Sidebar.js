@@ -150,13 +150,13 @@ const Sidebar = () => {
             </Link>
           </section>
 
-          <section className="sidebar__menu__section">
+          {/* <section className="sidebar__menu__section">
             <Link to="/settings" className="sidebar__menu__item" activeClassName="sidebar__menu__item--active">
               <Icon name="settings" type="material" />
               <I18n path="sidebar.settings" />
               <StatusIcon />
             </Link>
-          </section>
+          </section> */}
 
         </nav>
       </div>

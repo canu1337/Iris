@@ -132,6 +132,7 @@ const Artist = () => {
                   type="primary"
                   onClick={onPlayAll}
                   tracking={{ category: 'Artist', action: 'Play' }}
+                  disabled={true}
                 >
                   <I18n path="actions.play" />
                 </Button>
@@ -141,7 +142,6 @@ const Artist = () => {
                     is_following={artist.in_library}
                   />
                 )}
-                <ContextMenuTrigger className="white" onTrigger={handleContextMenu} />
               </div>
             </div>
           </div>

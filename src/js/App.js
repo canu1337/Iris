@@ -162,7 +162,7 @@ const App = () => {
   // Primary engines
   useEffect(() => {
     if (isReady) {
-      if (allow_reporting) {
+      if (false) {
         ReactGA.initialize('UA-64701652-3');
         Sentry.init({
           dsn: 'https://ca99fb6662fe40ae8ec4c18a466e4b4b@o99789.ingest.sentry.io/219026',
@@ -242,7 +242,7 @@ const App = () => {
 
   const handleInstallPrompt = (e) => {
     e.preventDefault();
-    console.log('Install prompt detected');
+    console.log('Installqq prompt detected');
     dispatch(uiActions.installPrompt(e));
   };
 
@@ -298,7 +298,6 @@ const App = () => {
         <ResizeListener />
         {hotkeys_enabled && <Hotkeys />}
         <ContextMenu />
-        <Notifications />
         {hasInteracted && <ErrorBoundary silent><Stream /></ErrorBoundary>}
         {hasInteracted && ('mediaSession' in navigator) && <MediaSession />}
         {debug_info && <DebugInfo />}
