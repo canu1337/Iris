@@ -158,7 +158,7 @@ const ContextMenuItems = ({
           <GoTo type="track" uri={item.uri} />
           {provider === 'spotify' && (
             <>
-              <Discover uris={[item.uri]} c&ontext={context} />
+              <Discover uris={[item.uri]} context={context} />
               <Divider />
             </>
           )}
