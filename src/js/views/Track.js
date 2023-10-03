@@ -313,6 +313,7 @@ class Track extends React.Component {
 
         <div className="actions">
           <Button
+            disabled
             type="primary"
             onClick={this.play}
             tracking={{ category: 'Track', action: 'Play' }}
