@@ -189,14 +189,14 @@ const PlaybackControls = () => {
           onClick={() => dispatch(mopidyActions.setRepeat(!repeat))}
         >
           <Icon name="repeat" type="material" />
-          <span className="tooltip__content">
+          <span className="tooltip__content">&
             <I18n path="playback_controls.repeat" />
           </span>
         </button>
         <OutputControl force_expanded={expanded} />
       </section>
 
-      <section className="volume" style="display:none">
+      <section className="volume" style={{display: 'none'}}>
         <MuteControl
           mute={mute}
           onMuteChange={(value) => dispatch(mopidyActions.setMute(value))}
