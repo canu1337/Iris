@@ -139,7 +139,7 @@ const ContextMenuItems = ({
     case 'track': {
       return (
         <>
-          <Play uris={[item.uri]} context={context} />
+          {/* <Play uris={[item.uri]} context={context} /> */}
           {context?.type === 'queue' ? (
             <>
               <MoveToPlayNext items={[item]} />
@@ -158,7 +158,7 @@ const ContextMenuItems = ({
           <GoTo type="track" uri={item.uri} />
           {provider === 'spotify' && (
             <>
-              <Discover uris={[item.uri]} context={context} />
+              <Discover uris={[item.uri]} c&ontext={context} />
               <Divider />
             </>
           )}
