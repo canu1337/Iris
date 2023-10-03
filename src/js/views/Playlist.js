@@ -45,6 +45,7 @@ const Actions = ({
         return (
           <div className="actions">
             <Button
+              disabled
               type="primary"
               onClick={onPlay}
               tracking={{ category: 'Playlist', action: 'Play' }}
@@ -65,6 +66,7 @@ const Actions = ({
       return (
         <div className="actions">
           <Button
+            disabled
             type="primary"
             onClick={onPlay}
             tracking={{ category: 'Playlist', action: 'Play' }}
@@ -84,6 +86,7 @@ const Actions = ({
       return (
         <div className="actions">
           <Button
+            disabled
             type="primary"
             onClick={onPlay}
             tracking={{ category: 'Playlist', action: 'Play' }}

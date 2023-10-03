@@ -196,7 +196,7 @@ const PlaybackControls = () => {
         <OutputControl force_expanded={expanded} />
       </section>
 
-      {/* <section className="volume">
+      <section className="volume" display:none>
         <MuteControl
           mute={mute}
           onMuteChange={(value) => dispatch(mopidyActions.setMute(value))}
@@ -207,7 +207,7 @@ const PlaybackControls = () => {
           mute={mute}
           onVolumeChange={(value) => dispatch(mopidyActions.setVolume(value))}
         />
-      </section> */}
+      </section>
 
       <section className="triggers">
         <button

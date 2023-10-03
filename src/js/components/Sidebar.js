@@ -123,7 +123,7 @@ const Sidebar = () => {
             )}
           </section>
 
-          <section className="sidebar__menu__section">
+          {/* <section className="sidebar__menu__section">
             <title className="sidebar__menu__section__title">
               <I18n path="sidebar.my_music" />
             </title>
@@ -148,7 +148,7 @@ const Sidebar = () => {
               <Icon name="folder" type="material" />
               <I18n path="sidebar.browse" />
             </Link>
-          </section>
+          </section> */}
 
           {/* <section className="sidebar__menu__section">
             <Link to="/settings" className="sidebar__menu__item" activeClassName="sidebar__menu__item--active">

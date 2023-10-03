@@ -194,6 +194,7 @@ const Album = () => {
 
       <div className="actions">
         <Button
+          disabled
           type="primary"
           onClick={play}
           tracking={{ category: 'Album', action: 'Play' }}
