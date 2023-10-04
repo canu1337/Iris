@@ -146,7 +146,7 @@ const Group = ({
               <h5 className="output-control__clients__item__title">
                 {titleCase(clientName)}
               </h5>
-              <div className="output-control__clients__item__volume">
+              <div className="output-control__clients__item__volume" style={{display: 'none'}}>
                 <MuteControl
                   noTooltip
                   mute={mute}

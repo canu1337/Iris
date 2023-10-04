@@ -127,6 +127,7 @@ const PlaybackControls = () => {
         {
           play_state === 'playing' ? (
             <button
+              disabled
               type="button"
               className="control play"
               onClick={() => dispatch(mopidyActions.pause())}
@@ -135,6 +136,7 @@ const PlaybackControls = () => {
             </button>
           ) : (
             <button
+              disabled
               type="button"
               className="control play"
               onClick={() => dispatch(mopidyActions.play())}

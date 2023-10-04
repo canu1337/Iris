@@ -172,6 +172,7 @@ const BrowseDirectory = () => {
       />
       {tracks && (
         <Button
+          disabled
           onClick={playAll}
           noHover
           discrete
